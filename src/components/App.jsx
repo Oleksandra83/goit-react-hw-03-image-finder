@@ -3,6 +3,7 @@ import { Searchbar } from "./Searchbar/Searchbar";
 import ImageGallery from "./ImageGallery/ImageGallery";
 import { ToastContainer, Slide } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Layout } from "./Layout/Layout";
 
 
 export default class App extends Component {
@@ -17,13 +18,13 @@ export default class App extends Component {
 	render() {
 		const { textSearch } = this.state;
 		return (
-			<div>
+			<>
 				<Searchbar onSubmit={this.handleSubmit} />
-				<div>
+				<Layout>
 					<ImageGallery value={textSearch} />
-				</div>
-				<ToastContainer transition={Slide} draggable={60} />
-			</div>
+				</Layout>
+				<ToastContainer transition={Slide} draggablePercent={60} />
+			</>
 		);
 	}
 }

@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import imagesAPI from 'services/getImages';
 import { ImageGallaryItem } from '../ImageGalleryItem/ImageGalleryItem';
 import DefaultImg from 'assets/tjer.png';
-import { Loader } from 'components/Loader/Loader';
+import { Loader } from '../Loader/Loader';
 import { List } from './ImageGallery.styled';
 import ImageError from '../ImageError/ImageError';
 import { InitialStateGallery } from '../InitialStateGallery/InitialStateGallery';
 import { Button } from '../Button/Button';
-import Modal from 'components/Modal/Modal';
+import Modal from '../Modal/Modal';
 
 const Status = {
 	IDLE: 'idle',
@@ -113,7 +113,7 @@ export default class ImageGallery extends Component {
 					{images.length > 0 && status !== 'pending' && page <= totalPages && (
 						<Button onClick={this.handleLoadMore}>Load More</Button>
 					)}
-
+					
 					{isShowModal && (
 						<Modal modalData={modalData} onModalClose={this.handleModalClose} />
 					)}

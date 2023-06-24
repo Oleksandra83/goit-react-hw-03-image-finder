@@ -6,7 +6,7 @@ export const ModalBackdrop = styled.div`
 	left: 0;
 	width: 100vw;
 	height: 100vh;
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, 0.6);
 `;
 
 export const ModalContent = styled.div`
@@ -15,8 +15,8 @@ export const ModalContent = styled.div`
 	left: 50%;
 	transform: translate(-50%, -50%);
 	padding: 4px;
-	max-width: calc(100vw - 48px);
-	min-height: calc(100vh - 24px);
+	width: 65vw;
+	height: 650px;
 	background-color: #f8eed7;
 	border-radius: 2px;
 	box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -37,14 +37,14 @@ export const ModalDescr = styled.p`
 	align-items: center;
 	justify-content: center;
 	margin: 0 auto;
-	padding: 8px;
+	padding: 8px 0px;
 	width: 100%;
 	color: #3d3a3a;
-	text-shadow: 2px 2px 5px white;
+	text-shadow: 0px 1px 1px white;
 	background-color: rgba(185, 228, 201, 0.7);
 	box-shadow: 0px -2px 4px 1px rgba(0, 0, 0, 0.2), 0px -4px 5px 0px rgba(0, 0, 0, 0.14), 0px -1px 10px 0px rgba(0, 0, 0, 0.12);
 	backdrop-filter: blur(5.5px);
 	font-family: 'Dancing Script';
-	font-size: 20px;
+	font-size: 28px;
 	text-align: center;
 `;
