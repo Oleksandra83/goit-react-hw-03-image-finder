@@ -1,4 +1,4 @@
-import {LoaderWrapper, StyledLoader, PendingTjer} from './Loader.styled';
+import {LoaderWrapper, StyledLoader} from './Loader.styled';
 
 export const Loader = () => {
 	return (
